@@ -1,0 +1,36 @@
+/*================ ESTILOS MAIN ================*/
+.description-help{
+    margin:0 auto;
+    width: 800px;
+}
+.description-help p{
+    margin-top: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+.form-help{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-help input{
+    margin-bottom: 15px;
+}
+.container-button-help{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container-button-help input:last-child{
+    margin-left: 5px;
+}
+.alert-message{
+    width: 390px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: #dc3545;
+}
+/*============== FIN ESTILOS MAIN ==============*/

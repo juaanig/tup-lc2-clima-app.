@@ -1,10 +1,11 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUP LC2 - TP Integrador</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png">
     <title>Clima app</title>
 </head>
@@ -26,13 +27,17 @@
     <!-- ------------------ Contenido principal de la página ------------------ -->
     <main>
         <h2>Agregar ciudad</h2>
-        <section id="form-city-list">
-            <form>
+        <section class="section-add-city" id="section-city-list">
+            <form class="form-add-city">
                 <label for="add-city">Ingrese la ciudad a agregar:</label>
                 <input type="text" id="add-city" >
-                <br>
-                <input type="button" value="Agregar" id="agregar">
+                <input class="add-button" type="button" value="Agregar" id="agregar">
             </form>
+        </section>
+        <section class="messages-add-city">
+            <p>Ciudad agregada con éxito</p>
+            <p>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
+            <p>La ciudad ingresada ya se encuentra almacenada</p>
         </section>
     </main>
     <!-- ------------------ contenido inferior ------------------ -->

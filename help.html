@@ -1,10 +1,11 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUP LC2 - TP Integrador</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/help.css">
     <title>Clima app</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
@@ -17,7 +18,7 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="index.hmtl">Clima</a></li>
+                <li><a href="index.html">Clima</a></li>
                 <li><a href="add-city.html">Agregar Ciudad</a></li>
                 <li class="current-page"><a href="#">Ayuda</a></li>
             </ul>
@@ -26,25 +27,25 @@
     <!-- ------------------ Contenido principal de la página ------------------ -->
     <main>
         <h2>Ayudo Clima App v.1.0</h2>
-        <div class="card">
-            <p>Esta app te permite consultar el clima de una ciudad en partcular la API <a href="“https://openweathermap.org/api”" target="_blank">OpenWeatherMap</a></p>
+        <div class="description-help">
+            <p>Esta app te permite consultar el clima de una ciudad en particular utilizando la API <a href="“https://openweathermap.org/api”" target="_blank">OpenWeatherMap</a></p>
             <P>Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima</a></P>
         </div>
-        <section>
-            <form action="">
+        <section class="section-help">
+            <form class="form-help" action="">
                 <label for="nombre"><b>Nombre: </b></label>
                 <input type="text" name="nombre" id="nombre">
-                <br>
                 <label for="mail"><b>Email: </b></label>
                 <input type="email">
-                <br>
                 <label for="area"><b>Mensaje: </b></label>
                 <textarea name="area" id="area" cols="30" rows="10" style="resize:none;"></textarea>
-                <br>
-                <input type="reset" value="Limpiar">
-                <input type="submit" value="Enviar">
+                <div class="container-button-help">
+                    <input class="add-button" type="reset" value="Limpiar">
+                    <input class="add-button" type="submit" value="Enviar">
+                </div>
             </form>
         </section>
+        <p class="alert-message">Ingrese un Email valido</p>
     </main>
     <!-- ------------------ contenido inferior ------------------ -->
     <footer>

@@ -1,0 +1,37 @@
+/*==================== ESTILO SECTION FORM ====================*/
+.section-add-city>.form-add-city {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-add-city>.form-add-city>#add-city{
+    width: 100%;
+}
+/*================== FIN ESTILO SECTION FORM ==================*/
+
+/*==================== ESTILO SECTION MESSAGE ====================*/
+.messages-add-city{
+    display: block;
+    text-align: center;
+}
+.messages-add-city p {
+    width: 510px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+}
+.messages-add-city p:nth-child(1){
+    background-color: #28a745;
+}
+.messages-add-city p:nth-child(2){
+    background-color: #dc3545;
+}
+.messages-add-city p:nth-child(3){
+    background-color: #ffc107;
+}
+/*================== FIN ESTILO SECTION MESSAGE ==================*/
+

@@ -1,3 +1,8 @@
+/*================================== ESTILOS GENERALES ===================================*/
+html {
+    min-height: 100%;
+    position: relative;
+  }
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,8 +19,8 @@
 }
 
 body {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 ul {
@@ -23,18 +28,32 @@ ul {
     padding: 0;
     margin: 0;
 }
-
+button,.add-button{
+    background-color: #00594c;
+    color: white;
+    border:none !important;
+}
 button,
 a {
     user-select: none;
     -webkit-user-select: none;
 }
+select,button,input{
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/*================================== FIN ESTILOS GENERALES ===================================*/
 
+/*================================ ESTILOS HEADER-NAV LISTAS =================================*/
 header {
-    position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom:3px solid var(--color-active);
 }
 
 nav>ul {
@@ -44,8 +63,7 @@ nav>ul {
 }
 
 nav li {
-    flex:
-        0 0 auto;
+    flex:0 0 auto;
 }
 
 nav li a {
@@ -56,14 +74,22 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-active);
+    cursor: pointer;
 }
 
 nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-
+nav li a:hover {
+    color: var(--color-theme);
+    background-color: var(--color-active);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
 h1 {
     text-align: center;
@@ -75,13 +101,16 @@ h1>img {
     width: 70px;
     vertical-align: middle;
 }
+/*============================ FIN ESTILOS HEADER-NAV LISTAS =================================*/
 
+/*================================ ESTILOS CONTENIDO MAIN =================================*/
 main {
-    margin-top: 150px;
+    margin-top: 10px;
     overflow: auto;
     padding: 16px;
     padding-bottom: 60px;
     height: calc(100% - 120px);
+    margin-bottom: 50px;
 }
 h2 {
     color: var(--color-theme);
@@ -97,21 +126,23 @@ h3 {
 main section {
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
 }
-.card>p{
-    margin-bottom: 10px;
-}
+/*============================ FIN ESTILOS HEADER-NAV LISTAS =================================*/
+
+/*====================================== ESTILOS FOOTER ======================================*/
 footer {
-    position: fixed;
-    bottom: 0px;
-    background: var(--color-theme);
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+    background: var(--color-gradient);
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-top:3px solid var(--color-active);
 }
 
 footer p {
     font-size: small;
     color: white;
 }
+/*================================== FIN ESTILOS FOOTER ======================================*/
