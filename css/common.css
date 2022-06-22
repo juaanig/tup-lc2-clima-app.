@@ -130,6 +130,33 @@ main section {
 }
 /*============================ FIN ESTILOS HEADER-NAV LISTAS =================================*/
 
+/*==================== ESTILO SECTION MESSAGE ====================*/
+.messages-add-city{
+    display: block;
+    text-align: center;
+}
+.messages-add-city div {
+    width: 510px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+}
+.message-success{
+    display: none;
+    background-color: #28a745;
+}
+.message-error{
+    display: none;
+    background-color: #dc3545;
+}
+.message-waring{
+    display: none;
+    background-color: #ffc107;
+}
+/*================== FIN ESTILO SECTION MESSAGE ==================*/
+
 /*====================================== ESTILOS FOOTER ======================================*/
 footer {
     width: 100%;
