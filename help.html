@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/help.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <script src="./js/common.js" defer></script>
+    <script src="./js/common.js"  defer></script>
     <script src="./js/pages/help.js" defer></script>
     <title>Clima app</title>
 </head>
@@ -33,24 +33,22 @@
             <P>Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima</a></P>
         </div>
         <section class="section-help">
-            <form class="form-help" action="">
-                <label for="nombre"><b>Nombre: </b></label>
-                <input type="text" name="nombre" id="nombre">
+            <form class="form-help" id="form-help" action="">
+                <label for="name"><b>Nombre: </b></label>
+                <input type="text" name="name" id="name" required>
                 <label for="mail"><b>Email: </b></label>
-                <input type="email">
+                <input type="email" name="mail" id="mail" required>
                 <label for="area"><b>Mensaje: </b></label>
-                <textarea name="area" id="area" cols="30" rows="10" style="resize:none;"></textarea>
+                <textarea name="area" id="area" cols="30" rows="10" style="resize:none;" required></textarea>
                 <div class="container-button-help">
                     <input class="add-button" type="reset" value="Limpiar">
-                    <input class="add-button" type="submit" value="Enviar">
+                    <input class="add-button" id="button" type="submit" value="Enviar">
                 </div>
+                <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <script type="text/javascript">emailjs.init('eKPcR9Bh8SgLClZC8')</script>
             </form>
         </section>
-        <section class="messages-add-city">
-            <div class="message-error">
-                <p>Ingrese un Email valido</p>
-            </div>                        
-        </section>
+        <section class="messages" id="messages-help"></section>
     </main>
     <!-- ------------------ contenido inferior ------------------ -->
     <footer>

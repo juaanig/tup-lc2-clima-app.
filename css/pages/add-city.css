@@ -9,5 +9,9 @@
 .section-add-city>.form-add-city>#add-city{
     width: 100%;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*================== FIN ESTILO SECTION FORM ==================*/
-

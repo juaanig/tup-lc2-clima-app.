@@ -1,5 +1,7 @@
 /*========== ESTILOS CARD ==========*/
 .card{
+    display: none;
+    margin-top: 4vh;
     padding: 5px 5px; 
     width: 240px;
     text-align: center;

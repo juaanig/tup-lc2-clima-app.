@@ -35,16 +35,11 @@
                 <input class="add-button" type="button" value="Agregar" id="agregar">
             </form>
         </section>
-        <section class="messages-add-city">
-            <div class="message-success" id="message-success-1">
-                <p>Ciudad agregada con éxito</p>
-            </div>
-            <div class="message-error" >
-                <p>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
-            </div>
-            <div class="message-waring" >
-                <p>La ciudad ingresada ya se encuentra almacenada</p>
-            </div>                        
+        <div class="container">
+            <span class="loader" id="spinner"></span>
+        </div>
+        <section class="messages" id="messages-add-city">
+            
         </section>
     </main>
     <!-- ------------------ contenido inferior ------------------ -->

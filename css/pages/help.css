@@ -24,13 +24,8 @@
 .container-button-help input:last-child{
     margin-left: 5px;
 }
-.alert-message{
-    width: 390px;
-    margin: 30px auto;
-    padding: 20px 30px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    background-color: #dc3545;
+textarea{
+    padding: 10px;
+    border-radius: 10px;
 }
 /*============== FIN ESTILOS MAIN ==============*/
