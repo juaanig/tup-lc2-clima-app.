@@ -16,9 +16,9 @@ function addOptions(){
     }
 }
 
-function insertCard(data){ 
+async function insertCard(data){ 
     try{
-        let datos = data;
+        let datos = await data;
     
         bodyCard =`
         <h3>${datos.name}</h3>
@@ -41,7 +41,7 @@ function insertCard(data){
     
 }
 
-async function aux(){ 
+function aux(){ 
     try{ 
 
         switch(selectCity.value){

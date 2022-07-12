@@ -22,6 +22,8 @@ async function validacion(ciudad){
 
     return value;
 }
+
+//switch case : no usar . clean code
  
 async function addNewCityToLocalStorage() {
 
